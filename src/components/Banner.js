@@ -1,14 +1,18 @@
-import careerlabslogo from "../Assets/careerlabslogo.png"
+import careerlabslogo from "../Assets/careerlabslogo.png";
+import Form from "./Form.js";
 export default function Banner() {
   return (
-      <div id="content" className="container">
+    <div id="content" className="container">
+      <div className="div-1">
         <div id="content-div-1">
           <h1>Get an Opportunity to be</h1>
           <div id="content-techM">
             <div id="content-techM-placed">
               <h1>placed in </h1>
             </div>
-            <div id="content-techM-1"><h1>Tech Mahindra</h1></div>
+            <div id="content-techM-1">
+              <h1>Tech Mahindra</h1>
+            </div>
           </div>
         </div>
         <div id="content-div-2">
@@ -16,7 +20,7 @@ export default function Banner() {
             <h1>Trained by</h1>
           </div>
           <div id="content-div-2-cl-img">
-              <img src={careerlabslogo}></img>
+            <img src={careerlabslogo}></img>
           </div>
         </div>
         <div id="content-div-3">
@@ -35,5 +39,12 @@ export default function Banner() {
           <p>*Terms and Conditions Apply</p>
         </div>
       </div>
+      <div className="div-2">
+        <div>Get Your Chance</div>
+        <div className="form">
+         <Form />
+        </div>
+      </div>
+    </div>
   );
 }

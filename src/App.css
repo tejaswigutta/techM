@@ -19,6 +19,8 @@
   color: white;
   height: 70vh;
   padding-top: 6.25rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -91,6 +93,59 @@
   line-height: 150%;
 }
 
+.div-2 {
+  min-width: 26rem;
+  min-height: 31rem;
+  background-color: #F5D76E;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.form-progress-image{
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+
+.div-2>div:first-child {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 180%;
+  color: #052A4E;
+}
+
+input,
+select {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: 0.2rem;
+  font-size: 1rem;
+}
+
+.form-submit input {
+  background: linear-gradient(84.05deg, #0D63F1 2.91%, #1791ED 103.25%);
+  border-radius: 3.31rem;
+  cursor: pointer;
+  border: none;
+  width: 92%;
+  height: 3.5rem;
+  color: white;
+  position: absolute;
+  bottom: 2rem;
+  left: 4%;
+}
+
+.thankyou{
+  font-size: 2rem;
+  text-align: center;
+  color:black;
+  margin-top: 1rem;
+}
+
 .how-does-it-work {
   text-align: center;
 }
@@ -100,12 +155,16 @@
   font-size: 40px;
   line-height: 60px;
   color: #052A4E;
+  padding-top:7rem;
 }
 
 .how-does-it-work-img img {
   min-width: 74.5rem;
 }
 
+.aboutCareerLabs{
+  background-color:#F3F9FE;
+}
 
 .aboutCareerLabs h1 {
   font-weight: 500;
@@ -136,6 +195,7 @@
 
 #div-3-button {
   margin-top: 1rem;
+  text-align: center;
 }
 
 #div-3-button button {
@@ -181,6 +241,10 @@
   color: white;
 }
 
+.curriculum{
+  background-color:#F3F5F9;
+}
+
 .curriculum-heading {
   font-weight: 500;
   font-size: 2.5rem;
@@ -214,12 +278,13 @@
   color: #413F4E;
 }
 
-.curriculum-button,.curriculum-click{
+.curriculum-button,
+.curriculum-click {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.curriculum-button button{
+.curriculum-button button {
   background: linear-gradient(84.05deg, #0D63F1 2.91%, #1791ED 103.25%);
   border-radius: 3.31rem;
   cursor: pointer;
@@ -230,8 +295,8 @@
   text-align: center;
 }
 
-.curriculum-click b{
-  color:  #0D63F1;
+.curriculum-click b {
+  color: #0D63F1;
 }
 
 .div-6 {
@@ -270,7 +335,8 @@
   transition: 0.3s;
   width: 28rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 #div-6-text-2>div:nth-child(2),
@@ -291,11 +357,12 @@
 
 .div-6-text-2-1 {
   display: flex;
+  margin-bottom: 0.5rem;
 }
 
 .div-6-text-2-1 div:nth-child(2) {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
   color: #413F4E;
   /* margin-bottom: 1.5rem; */
 }
@@ -329,9 +396,338 @@
   background-color: #001B78;
   height: 3.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media (max-width: 570px) {
+
+  .container {
+    padding: 1rem;
+  }
+
+  #content {
+    background-image: url("./Assets/bannerMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 0vh;
+    min-height: 41.5rem;
+    padding-top: 0rem;
+    display: block;
+    /* background: linear-gradient(90.16deg, rgba(0, 0, 0, 0.6) 0.12%, rgba(0, 0, 0, 0.13) 304.55%); */
+  }
+
+
+  #content-div-1 h1 {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+
+  #content-techM {
+    display: flex;
+  }
+
+  #content-techM-placed {
+    margin-right: 0.5rem;
+  }
+
+  #content-techM-1 h1 {
+    font-weight: bold;
+  }
+
+
+  #content-div-2 {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  #content-div-2-trained {
+    margin-right: 0.5rem;
+    /* border:2px solid green; */
+    padding-top: 0rem;
+  }
+
+  #content-div-2-trained h1 {
+    font-size: 2rem;
+  }
+
+  #content-div-3-role p {
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+
+  #content-div-3-desc li {
+    font-size: 0.875rem;
+    line-height: 180%;
+  }
+
+  #content-div-4 {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  #content-div-4 p {
+    font-size: 0.75rem;
+    line-height: 150%;
+  }
+
+  .how-does-it-work-img img {
+    min-width: 21rem;
+    min-height: 16rem;
+  }
+
+  .div-2 {
+    min-width: 0rem;
+    width: 88%;
+    min-height: 28rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .div-2>div:first-child {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 180%;
+    color: #052A4E;
+  }
+
+  input,
+  select {
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-submit input {
+    background: linear-gradient(84.05deg, #0D63F1 2.91%, #1791ED 103.25%);
+    border-radius: 3.31rem;
+    cursor: pointer;
+    border: none;
+    width: 88%;
+    height: 3rem;
+    color: white;
+    left: 5%;
+  }
+
+  .how-does-it-work-text {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-top: 9rem;
+  }
+
+  .how-does-it-work-img img {
+    width: 21rem;
+    height: 11.443rem;
+  }
+
+  .aboutCareerLabs>h1:first-child {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  #div-3-paper-text {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #div-3-paper img {
+    width: 20.5rem;
+    height: 13.5rem;
+  }
+
+  #div-3-text li {
+    font-size: 0.875rem;
+    line-height: 180%;
+  }
+
+  #div-3-text img {
+    height: 3.0421rem;
+    width: 19.5rem;
+  }
+
+  #div-3-button {
+    margin-top: 1rem;
+  }
+
+  #div-3-button button {
+    border-radius: 3.31rem;
+    width: 13.37rem;
+    height: 3rem;
+  }
+
+  .div-4-text-img {
+    display: block;
+  }
+
+  #div-4-img {
+    width: 100%;
+    margin-right: 0rem;
+    text-align: center;
+  }
+
+  #div-4-img img {
+    height: 20.5rem;
+    width: 19.4rem;
+  }
+
+  #div-4-text h1 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  #div-4-text li {
+    font-size: 0.875rem;
+    line-height: 180%;
+  }
+
+  #div-4-button {
+    text-align: center;
+  }
+
+  #div-4-button button {
+    border-radius: 3.31rem;
+    width: 13.37rem;
+    height: 3rem;
+  }
+
+  .curriculum-heading {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .curriculum-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .card {
+    width: 9.75rem;
+    height: 11.43rem;
+    padding: 0.5rem;
+  }
+
+  .card>div:nth-child(2) {
+    font-size: 0.687rem;
+    line-height: 180%;
+  }
+
+  .curriculum-button,
+  .curriculum-click {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .curriculum-button button {
+    width: 13.375rem;
+    height: 3rem;
+  }
+
+  .div-6 {
+    display: block;
+  }
+
+  #terms-and-conditions h3 {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  #terms-and-conditions li {
+    font-size: 0.875rem;
+    line-height: 170%;
+  }
+
+  #early-enrollment-offer h3 {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  #early-enrollment-offer li {
+    font-size: 0.875rem;
+    line-height: 170%;
+  }
+
+  #money-back h3 {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  #money-back li {
+    font-size: 0.875rem;
+    line-height: 170%;
+  }
+
+  #div-6-text-2 {
+    width: 92%;
+    text-align: center;
+  }
+
+  .nowornever>h1:first-child {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  #div-6-text-2>div:nth-child(2),
+  #div-6-text-2>div:nth-child(3) {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 180%;
+    color: #052A4E;
+  }
+
+  #div-6-text-2>div:nth-child(3) {
+    margin-bottom: 1rem;
+  }
+
+  #div-6-text-2>div:nth-child(4) {
+    margin-bottom: 1rem;
+  }
+
+  .div-6-text-2-1 {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .div-6-text-2-1 div:nth-child(2) {
+    font-size: 18px;
+    line-height: 24px;
+    color: #413F4E;
+    /* margin-bottom: 1.5rem; */
+  }
+
+  .price p:first-child {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #052A4E;
+  }
+
+  .price p:nth-child(2) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #413F4E;
+  }
+
+  #div-6-button button {
+    border-radius: 3.31rem;
+    width: 13.37rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  .footer {
+    height: 8rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+
+
 }

@@ -12,7 +12,7 @@ export default function Curriculum() {
   return (
     <div className="curriculum container">
       <div className="curriculum-heading">
-        The Curriculum covers the following topics{" "}
+        The Curriculum covers the following topics
       </div>
       <div className="curriculum-cards">
         <div className="card">

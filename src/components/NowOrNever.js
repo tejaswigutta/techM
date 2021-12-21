@@ -2,7 +2,7 @@ import industrycollaboration from "../Assets/industrycollaboration.png";
 import checkcircle from "../Assets/check_circle.png";
 export default function NowOrNever() {
   return (
-      <div className="nowornever">
+      <div className="nowornever container">
       <h1>Now or Never, Act Now!</h1>
     <div className="div-6 container">
       <div id="div-6-text-1">
